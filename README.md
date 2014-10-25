@@ -12,9 +12,10 @@ Miembros del Equipo
   1. Víctor Suárez García
   2. Cristian Alvarez Hossein
   3. Guillermo Canton Tortosa.
-  
-  ## Dispositivo ##
-  
+
+Dispositivo
+-----------
+
 Este dispositivo esta pensado para ser usado por la tarjeta Arduino Yun si se requiere más información sobre esta tarjeta, puede hacerlo desde el siguiente enlace:
 
 [http://arduino.cc/en/Guide/ArduinoYun](http://arduino.cc/en/Guide/ArduinoYun)
