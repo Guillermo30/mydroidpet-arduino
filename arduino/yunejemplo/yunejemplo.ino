@@ -40,15 +40,17 @@ void process(YunClient client){
     client.println(); 
     //Cords d;
    // d=getWifiCoords();
-    client.print("{\"Respuesta\":\"[\"");
+    client.print("{\"x\":\"");
     //client.print(d.x);
     client.print(1.23);
-    client.print("\";\"");
+    client.print("\";");
+    client.print("\"y\":\"");
     client.print(2.23);
     client.print("\";\"");
+    client.print("z\":\"");
     client.print(0.23);
-    client.print("\"]");
-    client.print("\"}");
+    client.print("\"");
+    client.print("}");
      if(activo==0){
      digitalWrite(13, HIGH);
      activo=1;
@@ -68,3 +70,4 @@ void process(YunClient client){
 //  coordenadas.z=d;
 //  return coordenadas;
 //}
+
