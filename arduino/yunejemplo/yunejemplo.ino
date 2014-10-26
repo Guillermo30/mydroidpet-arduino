@@ -12,6 +12,7 @@ int activo=0;
 //}Cords;
 
 void setup() {
+  randomSeed(analogRead(0));
   Serial.begin(9600);
   Bridge.begin();
   server.listenOnLocalhost();
@@ -42,13 +43,13 @@ void process(YunClient client){
    // d=getWifiCoords();
     client.print("{\"x\":\"");
     //client.print(d.x);
-    client.print(1.23);
+    client.print(random(255));
     client.print("\";");
     client.print("\"y\":\"");
-    client.print(2.23);
+    client.print(random(255));
     client.print("\";\"");
     client.print("z\":\"");
-    client.print(0.23);
+    client.print(random(255));
     client.print("\"");
     client.print("}");
      if(activo==0){
